@@ -1,0 +1,130 @@
+.logo {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    top: 6px;
+    width: 100%;
+ right: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(2, 2, 2);
+    /* margin: 4px 0; */
+    transition: all 0.3s ease;
+}
+
+
+.list {
+    display: none;
+    flex-direction: column;
+    background-color: #fa7070;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.list p {
+    /* padding: 10px 0; */
+    border-bottom: 1px solid rgb(209, 33, 33);
+    text-align: center;
+}
+
+.list p:last-child {
+    border-bottom: none;
+}
+
+.hamburger {
+    display: flex;
+}
+
+/* Toggle the navbar when the hamburger is clicked */
+.navbar.active .list {
+    display: flex;
+}
+
+
+/* Hamburger animation when active */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.container-1 {
+    width: 100%;
+    font-size: 20px;
+}
+
+.heading1 {
+    text-align: center;
+}
+
+.card {
+    flex-direction: column;
+}
+
+.emoji img {
+    text-align: center;
+}
+
+.box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img {
+    width: 350px;
+    height: 200px;
+}
+
+.card-2 {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.card-grid {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.card-grid img {
+    object-fit: cover;
+    object-position: top center;
+    text-align: center;
+    width: 50%;
+    height: 100px;
+}
+
+.para {
+    font-size: 27px;
+}
+
+.bothside {
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftside {
+    text-align: center;
+}
+
+.IMAGES {
+    margin-right: 60px;
+}
+
+.boxess {
+    flex-shrink: 2px;
+}
